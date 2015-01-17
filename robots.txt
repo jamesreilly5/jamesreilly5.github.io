@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://jamesreilly5.github.io/sitemap.xml 
