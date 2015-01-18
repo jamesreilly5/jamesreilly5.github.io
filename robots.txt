@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://blog.cosmicbadger.com/sitemap.xml 
+Sitemap: http://jamesreilly5.github.io/sitemap.xml 
