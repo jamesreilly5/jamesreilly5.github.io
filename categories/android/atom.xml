@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: android | The story of Cosmic Badger]]></title>
+  <link href="http://blog.cosmicbadger.com/categories/android/atom.xml" rel="self"/>
+  <link href="http://blog.cosmicbadger.com/"/>
+  <updated>2015-01-24T16:34:34+11:00</updated>
+  <id>http://blog.cosmicbadger.com/</id>
+  <author>
+    <name><![CDATA[James Reilly]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[No job, no problem]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/01/19/no-job-equals-indie-dev/"/>
+    <updated>2015-01-19T22:44:39+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/01/19/no-job-equals-indie-dev</id>
+    <content type="html"><![CDATA[<p>The idea for building a mobile game started while I was in Bali, Indonesia, where I was coming towards the end of a five month career break back-packing around S.E. Asia. At this stage I had pretty much exhausted all of my travel funds.  I had another week left there before flying to Melbourne for a couple of weeks and then finally home to Ireland. Aside from budgeting for food and shelter, there was no money left to do any anything tourist-related. In order to pass the time, this left myself with the free options of either swimming in the guesthouse pool or using the internet.</p>
+
+<p>With the time I had to burn I started thinking about what I was doing with my life when I returned to Ireland. I wanted to finally break into a career as a software engineer and decided that I would spend a couple of months working on a personal project in order to have something relevant on my resume. With a nerdy lifelong involvement with video games, I already knew the type of project it was going to be. I just didn&rsquo;t want to pick up a language that was entirely new to me such as Objective-C and then spend the two months getting to grips with it. I needed something more straight-forward, but something that I was familiar with. This language was Javascript and HTML5/Canvas was one of the new big things at the time.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/bali.jpg' width='' height='' title='The Balinese guesthouse where the first game code was written'><span class='caption-text'>The Balinese guesthouse where the first game code was written</span></span></p>
+
+<p>All I really needed then was a game idea, and it just so happened that I already had one in mind. As a kid, myself and my brother started making a 2D RPG using an application called <a href="http://wiki.mfgg.net/index.php?title=The_Games_Factory">The Games Factory</a> (that link shows how old it is now). The game that we made was called The Andrew W.K Saga (mainly because the main character looked like <a href="http://en.wikipedia.org/wiki/Andrew_W.K.">Andrew W. K.</a>) and it was actually the stupidest game ever! There was no real consistency to any of the levels or the controls, it was just a funny to make and it got dumber and dumber as it went along. There was one boss level where a giant cow-like creature was being pushed back and forth on a wooden kart by some gimpy looking old man. There were rocks falling from the ceiling which you had to avoid by moving the keys left and right. In order to kill the boss, there was a target randomly moving around the screen which you had to click whenever it crossed over the cow thing - all to the score of that crazy cuccoo catching mini-game music from the Zelda games (it wasn&rsquo;t exactly copyright-friendly). That <em>wasn&rsquo;t</em> the idea I had in mind by the way.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/p_sketch.jpg' width='' height='' title='Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask'><span class='caption-text'>Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask</span></span></p>
+
+<p>As ridiculous as the game was, there was one level in it that really stuck out as being enjoyable. Your character was stuck in a hot-air balloon and you had to navigate a slalom of enemies and spikes using the arrow keys to move left and right and then the space bar to hit the fuel line to go up, much like those one tap helicopter games that are everywhere except that you could move up and down in the game world too. While the idea was nothing special in terms of gameplay, I had ideas about the characters I wanted to put in it and the game world that I wanted to create which would hopefully make it stand out from other games of that kind. After about two collective hours googling html5 tutorials and hacking code I had created an extremely crude spike that verified that it would be possible to make the game.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/poc.png' width='' height='' title='The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!'><span class='caption-text'>The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!</span></span></p>
+
+<p>For anyone technical minded, and curious about how I did this - the game world was basically a huge background image for the whole level with the main character always remaining in the center (edited in MS paint using a touchpad for professionalism). The game background was translated on the canvas every time an arrow key-press was detected and there was some hardcoded logic in there to determine if your character&rsquo;s co-ordinates were within a single enemy&rsquo;s boundary. If you were then it was game over. Now, if anyone thinks that this screenshot is an indication of the final product then please just keep reading. It does get better, I promise!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Intro to indie game development]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/01/17/indie-or-bust/"/>
+    <updated>2015-01-17T20:59:55+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/01/17/indie-or-bust</id>
+    <content type="html"><![CDATA[<p>This month marks an important milestone. There is a complete build of a html5 game sitting on my phone and I&rsquo;m currently gearing up to release on both iOS and Android. The journey up to this point has been no easy task, there have been a <em>lot</em> of hurdles to overcome and even though it seems that the hardest part is over I&rsquo;m now facing an even more difficult exercise or raising awareness about the game so people will actually play it.</p>
+
+<p>This blog is a retrospective history of the development of the game, from initial conception through to completion.</p>
+]]></content>
+  </entry>
+  
+</feed>
