@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/javascript/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-01T23:11:59+11:00</updated>
+  <updated>2015-02-05T23:26:08+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Technical implementation of a game engine]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/02/05/technical-implementation-of-a-html5-game/"/>
+    <updated>2015-02-05T20:50:28+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/02/05/technical-implementation-of-a-html5-game</id>
+    <content type="html"><![CDATA[<p>I don&rsquo;t really regret building my own game engine given how much I learned from the experience. I do, however, feel that the quality of my game has suffered from not using a framework such as Phaser.js and if I ever [hopefully] make another game one day then I&rsquo;ll be going with something like Unity instead. Why all the negativity, you ask? Let&rsquo;s take a look at the implementation and see.</p>
+
+<p>I chose Javascript to write the engine and game logic as that&rsquo;s the language with which I was most familiar.  I also used a few libraries/tools, which helped me greatly -</p>
+
+<ul>
+<li>RequireJS</li>
+<li>jQuery</li>
+<li>Underscore</li>
+<li>Class.js</li>
+<li>Grunt</li>
+</ul>
+
+
+<p>RequireJS and jQuery are pretty explanitory, and I just really like Underscore because standard Javascript has such rubbish methods for iterating collections. Class.js is just a slightly nicer looking wrapper (if you don&rsquo;t know what you&rsquo;re doing) to implement inheritance in JavaScript. It was already there from the existing <a href="/2015/01/26/building-a-game-engine/">game skeleton</a> and if I wasn&rsquo;t a bit of a n00b at the time I would have never used it and stuck with Prototype. Grunt was used later down the line to minify and zip up the source code for deployment. I also started the project with the best intentions of TDD&#8217;ing the whole thing, but with a lack of experience at the time and an eagerness to see results in my short time-frame this never quite happened.</p>
+
+<p>So here&rsquo;s a class diagram of the the main bones of the game. I&rsquo;ve excluded some modules as not to over-complicate the diagram but I&rsquo;ll explain the additions in a later post.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/cosmic_badger_technical_implementation_01.jpg' width='' height='' title='The early Javascript module dependencies of Cosmic Badger'><span class='caption-text'>The early Javascript module dependencies of Cosmic Badger</span></span></p>
+
+<p>It&rsquo;s fairly self-explanitory, the Main module contained a MenuLoader responsible for drawing the menus (this wasn&rsquo;t always the case but I&rsquo;ll cover that in a later post). The MenuLoader was also was responsible for creating a Game. I&rsquo;m not sure that was the best design decision, it&rsquo;s implementation just had the least time impact a very late stage of development. Like I said, I&rsquo;ll cover that later. My Game module consisted of an [initially, 1d] array of entities which made up the enemies (which were just obstacles that weren&rsquo;t bound to 32px grid co-ordinates). The terrain data was just integers stored in a 2d array. The integers corresponded to an image&rsquo;s position in a large tilesheet and the array slot corresponded to the tiles position in the game world, which was tracked by the Camera. This data was stored in the Map module, which is essentially a glorified var containing the JSON game config.</p>
+
+<p>Both the terrain tiles and the entities had their own Sprites (in the case of terrain, a single Sprite), some of which had Animations and Boundries. The Boundry was just a simple box with a width, height and offset co-ordinates from the Sprite image. The Renderer was responsible for drawing the entities and tiles in the Game, the Updater was responsible for updating the Player co-ordinates (based on input from the Controller) and also for checking any boundry collisions via the CollisionDetector. If there was a collision then the Game state would be updated accordingly.</p>
+
+<p>Right, so what&rsquo;s that red box all about? This box is lined with the pigment of remorse. These are my <em>god modules</em> that got way too big with too many responsibilities. They are very tightly coupled and more a reflection of my inexperience at the time. With more software design knowledge, proper tests and the ability to smell when the code needed refactoring then this problem could have been avoided. Changing parts of this code was time consuming, but I knew it well enough to handle it and I&rsquo;m just glad I never had to show it to anyone in an interview. To quote <a href="https://buildkite.com/">BuildKite</a> founder <a href="https://twitter.com/keithpitt">Keith Pitt</a>, it&rsquo;s not legacy code, it&rsquo;s founder code. I wrote that when I founded the company!</p>
+
+<p>Building a game engine from scratch is a really difficult problem. If you haven’t been in the industry for a long time then there’s going to a be a lot of things that you don’t account for; and unless you’re a AAA game development company, my advice right now is to avoid building your own game engine altogether and just focus on building a great game. There’s no shame in sparing yourself the hard work and using something that someone else has already built for you. Having said that, if you just want to learn the ins and outs of game development then doing this is a great exercise.</p>
+
+<p>What about the LevelEditor, you say? Calm down, I&rsquo;ll tell you about that next.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building a game engine]]></title>
