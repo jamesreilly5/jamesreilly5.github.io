@@ -4,7 +4,7 @@
   <title><![CDATA[Category: canvas | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/canvas/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-05T23:44:44+11:00</updated>
+  <updated>2015-02-08T19:39:02+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The level editor - make ALL THE THINGS!]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/"/>
+    <updated>2015-02-08T18:11:59+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5</id>
+    <content type="html"><![CDATA[<p>Map editors are the bread and butter of game development. Without a decent one you may drastically increase the amount of time that it&rsquo;s going to take to build your levels. I&rsquo;m not the most experienced in discussing what&rsquo;s out there but I&rsquo;m going to go ahead and re-iterate the lesson from the <a href="/2015/02/05/technical-implementation-of-a-html5-game/">last post</a>. If you can get away with it, don&rsquo;t bother making your own level editor, use something that&rsquo;s already out there. I didn&rsquo;t listen to this advice at the time because I was a n00b, so I can at least share my creation with the internet.</p>
+
+<p>As discussed in a <a href="/2015/01/26/building-a-game-engine/">previous post</a>, I had just completed a bare-bones html5 game engine and was ready to start designing and populating my game world. Terrain data would be stored in a 2d array and entities would be stored [initially] in a 1d array. This was going to be a game that would move across both X and Y axises so there was no way I was going to hard-code every single level. I just needed a means of building the levels and outputting the JSON representation afterwards.</p>
+
+<p>As I didn&rsquo;t really plan for a level editor in my road map, I was reluctant to put much effor into it though; so here&rsquo;s what it looked like -</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/level_editor.jpg' width='' height='' title='The level editor used for the initial balloon game and the later Cosmic Badger'><span class='caption-text'>The level editor used for the initial balloon game and the later Cosmic Badger</span></span></p>
+
+<p><strong> Adding tiles and entities </strong></p>
+
+<p>The editor initially only displayed the tile sheet to add terrain to the game, but it soon occured to me that I&rsquo;d need to add the ability to add entities too. The whole thing was just a second canvas element. I could pick individual tiles to add to a grid co-ordinate, or select a group of adjacent tiles to drop in the world in one chunk. I could move around in the game world (i.e. the first canvas element) either by using the mouse controls or by using the keyboard up, down, left, right controls. Once I was happy with my world I could print the output to the web console and copy the JSON into the map using the &ldquo;Entity map&rdquo; or &ldquo;Tile map&rdquo; buttons. In retrospect I should have added functionality to auto-save the whole game world without copying and pasting the JSON but like I said, it was a rush job.</p>
+
+<p><strong> Adding boundaries </strong></p>
+
+<p>Then I would have to configure boundaries for each individual tile and entity. I had a debug button to display where the boundaries were (the red squares in the screenshot above) and I would have to manually change each boundary co-ordinates and dimensions until I was happy with them. Apart from making the actual levels, this was one of the most painstaking and monotonous tasks I had to do. I <em>wish</em> I had improved the editor to do this drag-and-drop style.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/boundaries_config.jpg' width='' height='' title='The task of adding boundaries to the game made me die inside a little'><span class='caption-text'>The task of adding boundaries to the game made me die inside a little</span></span></p>
+
+<p><strong> Displaying the grid </strong></p>
+
+<p>Nothing much to say about this, I just needed a means of knowing how much space I had between land masses for judging the game reaction time and therefore the difficulty.</p>
+
+<p><strong> Expanding the game world </strong></p>
+
+<p>This wasn&rsquo;t really built for the purpose of the balloon game, but more so for later on when the game evolved into Cosmic Badger. When I would playtest levels and realised that there wasn&rsquo;t enough distance between obstacles/terrain. I wanted an easy way to split the game world by 32px by adding a new vertical row of tiles to 2d terrain array.</p>
+
+<p><strong> Lessons learned </strong></p>
+
+<p>As much as I play down what&rsquo;s there, the features actually came in really useful for debugging issues in the game. The editor and game logic was being run in real time with boundaries and normal controller input. I could effectively move to any part of the level (albeit slowly using the keyboard controls) and play test the area. I&rsquo;m sure others have different opinions on this, so feel free to start a discussion in the comments section.</p>
+
+<p>Now I had everything I needed to start building a game, time for the &ldquo;fun&rdquo; stuff.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Technical implementation of a game engine]]></title>

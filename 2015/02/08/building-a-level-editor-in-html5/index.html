@@ -1,0 +1,166 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>The level editor - make ALL THE THINGS! | The story of Cosmic Badger</title>
+
+	<meta name="author" content="James Reilly">
+	
+	<meta name="description" content="The lessons learned from building a level editor using html5/canvas and Javascript">
+
+	<meta name="keywords" content="html5, javascript, level editor, canvas, games, indie">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+	<link href="/atom.xml" rel="alternate" title="The story of Cosmic Badger" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/.min.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
+
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">The story of Cosmic Badger</a>
+	</header>
+	<span class="post-meta">08 Feb 2015</span>
+	<h1 class="post-title">The level editor - make ALL THE THINGS!</h1>
+
+	<section class="post-content">
+		<p>Map editors are the bread and butter of game development. Without a decent one you may drastically increase the amount of time that it&rsquo;s going to take to build your levels. I&rsquo;m not the most experienced in discussing what&rsquo;s out there but I&rsquo;m going to go ahead and re-iterate the lesson from the <a href="/2015/02/05/technical-implementation-of-a-html5-game/">last post</a>. If you can get away with it, don&rsquo;t bother making your own level editor, use something that&rsquo;s already out there. I didn&rsquo;t listen to this advice at the time because I was a n00b, so I can at least share my creation with the internet.</p>
+
+<p>As discussed in a <a href="/2015/01/26/building-a-game-engine/">previous post</a>, I had just completed a bare-bones html5 game engine and was ready to start designing and populating my game world. Terrain data would be stored in a 2d array and entities would be stored [initially] in a 1d array. This was going to be a game that would move across both X and Y axises so there was no way I was going to hard-code every single level. I just needed a means of building the levels and outputting the JSON representation afterwards.</p>
+
+<p>As I didn&rsquo;t really plan for a level editor in my road map, I was reluctant to put much effor into it though; so here&rsquo;s what it looked like -</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/level_editor.jpg' width='' height='' title='The level editor used for the initial balloon game and the later Cosmic Badger'><span class='caption-text'>The level editor used for the initial balloon game and the later Cosmic Badger</span></span></p>
+
+<p><strong> Adding tiles and entities </strong></p>
+
+<p>The editor initially only displayed the tile sheet to add terrain to the game, but it soon occured to me that I&rsquo;d need to add the ability to add entities too. The whole thing was just a second canvas element. I could pick individual tiles to add to a grid co-ordinate, or select a group of adjacent tiles to drop in the world in one chunk. I could move around in the game world (i.e. the first canvas element) either by using the mouse controls or by using the keyboard up, down, left, right controls. Once I was happy with my world I could print the output to the web console and copy the JSON into the map using the &ldquo;Entity map&rdquo; or &ldquo;Tile map&rdquo; buttons. In retrospect I should have added functionality to auto-save the whole game world without copying and pasting the JSON but like I said, it was a rush job.</p>
+
+<p><strong> Adding boundaries </strong></p>
+
+<p>Then I would have to configure boundaries for each individual tile and entity. I had a debug button to display where the boundaries were (the red squares in the screenshot above) and I would have to manually change each boundary co-ordinates and dimensions until I was happy with them. Apart from making the actual levels, this was one of the most painstaking and monotonous tasks I had to do. I <em>wish</em> I had improved the editor to do this drag-and-drop style.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/boundaries_config.jpg' width='' height='' title='The task of adding boundaries to the game made me die inside a little'><span class='caption-text'>The task of adding boundaries to the game made me die inside a little</span></span></p>
+
+<p><strong> Displaying the grid </strong></p>
+
+<p>Nothing much to say about this, I just needed a means of knowing how much space I had between land masses for judging the game reaction time and therefore the difficulty.</p>
+
+<p><strong> Expanding the game world </strong></p>
+
+<p>This wasn&rsquo;t really built for the purpose of the balloon game, but more so for later on when the game evolved into Cosmic Badger. When I would playtest levels and realised that there wasn&rsquo;t enough distance between obstacles/terrain. I wanted an easy way to split the game world by 32px by adding a new vertical row of tiles to 2d terrain array.</p>
+
+<p><strong> Lessons learned </strong></p>
+
+<p>As much as I play down what&rsquo;s there, the features actually came in really useful for debugging issues in the game. The editor and game logic was being run in real time with boundaries and normal controller input. I could effectively move to any part of the level (albeit slowly using the keyboard controls) and play test the area. I&rsquo;m sure others have different opinions on this, so feel free to start a discussion in the comments section.</p>
+
+<p>Now I had everything I needed to start building a game, time for the &ldquo;fun&rdquo; stuff.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>James Reilly</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=The level editor - make ALL THE THINGS!&amp;url=http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+  <section id="comment">
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://blog.cosmicbadger.com/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+
+
+
+
+
+
+
+<section class="copyright">All content copyright <a href="/">James Reilly</a> © 2015 • All rights reserved.</section>
+
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'blogcosmicbadgercom';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/';
+        var disqus_url = 'http://blog.cosmicbadger.com/2015/02/08/building-a-level-editor-in-html5/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-58653562-1']);
+		_gaq.push(['_setDomainName', 'blog.cosmicbadger.com']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</body>
+</html>
