@@ -1,0 +1,174 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>When to pivot on a game idea | The story of Cosmic Badger</title>
+
+	<meta name="author" content="James Reilly">
+	
+	<meta name="description" content="When do you decide to cut the scope of your indie game">
+
+	<meta name="keywords" content="html5, javascript, canvas, game scope, game design">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+	<link href="/atom.xml" rel="alternate" title="The story of Cosmic Badger" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/.min.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/open-in-blank.js"></script>
+
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">The story of Cosmic Badger</a>
+	</header>
+	<span class="post-meta">15 Feb 2015</span>
+	<h1 class="post-title">When to pivot on a game idea</h1>
+
+	<section class="post-content">
+		<p>It&rsquo;s not uncommon for indie developers to be working on a game when fresh ideas/features start to interrupt their train of thought. But what happens when an entirely new game concept altogether manifests itself? Do you scribble it down and carry on until you&rsquo;re finished your current project, or is the idea so captivating that you <em>just</em> can&rsquo;t wait to work on it, ditching your work in progress? This exact scenario happened to me during my first game, so I&rsquo;d like to take the opportunity to explain the path that was taken and the reasoning behind it.</p>
+
+<p><strong>The road so far</strong></p>
+
+<p>As <a href="/2015/02/05/technical-implementation-of-a-html5-game/">previously mentioned</a>, my game engine was up and running and now work could finally begin on the design of the ballon game. Five weeks had already gone by of the original estimated 2-3 month project so this was a good time to do a roadmap check. The following were the key points that needed to be achieved in the next month:</p>
+
+<ul>
+<li>Tilesheets to cover roughly 12 levels</li>
+<li>Design the levels to sprawl over both X and Y axises</li>
+<li>Enemies with different behaviour to make the game challenging and varied over the levels</li>
+<li>Sound effects for enemies, weapons, the player, etc.</li>
+<li>Music for all the levels</li>
+<li>Some sort of storage to track progress, collectables, etc.</li>
+<li>A menu system for selecting levels, pausing, etc.</li>
+<li>Design tutorials for the start of the game</li>
+</ul>
+
+
+<p>The first thing that became apparent was that most of this would <em>not</em> be achievable in just a couple of months. The biggest hurdles would be designing the levels and creating the tilesheets for everything, I wasn&rsquo;t even so worried about the coding. This was never going to work, and as <a href="/2015/02/12/top-9-tips-for-indie-developers/">advised in the last post</a> I needed  to cut my scope drastically to meet my deadline, but what could be cut? As far as I could see this wasn&rsquo;t going to be possible unless I released just a couple of levels. That just wouldn&rsquo;t cut it for the app store. Thankfully there was a backup plan that [in my mind] was achievable in this small amount of time.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/balloon_game.gif' width='' height='' title='The balloon game as it currently looked'><span class='caption-text'>The balloon game as it currently looked</span></span></p>
+
+<p><strong>A new game idea</strong></p>
+
+<p>One routine I had gotten into the habit of doing was to leave a notepad by my bed at night. I&rsquo;ve always been a little bit of an insomniac and when I&rsquo;m lying in bed after putting in a 10 hour day of game coding my mind was always racing with ideas. Sometimes the thoughts that came to me were just tasks that I had forgotten to take into account, other times they were new gameplay mechanics, enemies, puzzles, etc.</p>
+
+<p>One night, lying in bed, the completely unrelated thought of using portals in a game popped into my head. Now it&rsquo;s not like this is a revolutionary idea by any means, but after some brief app store searching I came to the conclusion that this hadn&rsquo;t been implemented in the mobile space to great effect. I had this idea of a platformer/auto-runner where your character had to teleport around obstacles. I switched the light on, wrote it down in my notepad and went back to bed.</p>
+
+<p>With the burden of the scope on my current project, the next day I was keen to prototype my new idea and see if it was any fun to play. I chopped the balloons off my character and used my first crappy tile sheet (effectively some sort of hexagon manhole cover?) to create  an auto-scrolling level. I had to add the auto scrolling, change the game mechanic and controls to use portals instead, and then add gravity to the game so the player could fall onto the terrain. This was the finished prototype and the idea was surprisingly fresh and fun to play.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/early_cosmic_badger.gif' width='' height='' title='The game after the idea pivot and the first Cosmic Badger prototype'><span class='caption-text'>The game after the idea pivot and the first Cosmic Badger prototype</span></span></p>
+
+<p><strong>The road beyond</strong></p>
+
+<p>This new game concept was going to be a <em>lot</em>  easier to implement. It was an auto-runner so the level design could be constrained to the x-axis (like the early Mario games) and there was no need to add different enemy behaviours (at least for the minimum viable product). Design-wise, the balloon game was a much more interesting project to me, but realistically it would take too long. I decided that for my first project I needed to start small, and pivoted to the new portal project.</p>
+
+<p><strong>The message to all other indie devs</strong></p>
+
+<p>Im sure there&rsquo;s a graveyard of unfinished titles sitting on different developers&#8217; hard drives, simply because they were too ambitious, or maybe because that person got bored before they could finish it. Pick a project that&rsquo;s achievable given your timeframe and if it&rsquo;s possible, cut your scope down to a minimal game. You don&rsquo;t necessarily have to sacrifice the quality of the game but a basic game on an app store is better than no game at all.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>James Reilly</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=When to pivot on a game idea&amp;url=http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+  <section id="comment">
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://blog.cosmicbadger.com/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+
+
+
+
+
+
+
+<section class="copyright">All content copyright <a href="/">James Reilly</a> © 2015 • All rights reserved.</section>
+
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'blogcosmicbadgercom';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/';
+        var disqus_url = 'http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-58653562-1']);
+		_gaq.push(['_setDomainName', 'blog.cosmicbadger.com']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</body>
+</html>

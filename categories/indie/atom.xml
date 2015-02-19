@@ -4,7 +4,7 @@
   <title><![CDATA[Category: indie | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/indie/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-12T22:14:32+11:00</updated>
+  <updated>2015-02-19T23:23:18+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[When to pivot on a game idea]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/"/>
+    <updated>2015-02-15T20:53:54+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s not uncommon for indie developers to be working on a game when fresh ideas/features start to interrupt their train of thought. But what happens when an entirely new game concept altogether manifests itself? Do you scribble it down and carry on until you&rsquo;re finished your current project, or is the idea so captivating that you <em>just</em> can&rsquo;t wait to work on it, ditching your work in progress? This exact scenario happened to me during my first game, so I&rsquo;d like to take the opportunity to explain the path that was taken and the reasoning behind it.</p>
+
+<p><strong>The road so far</strong></p>
+
+<p>As <a href="/2015/02/05/technical-implementation-of-a-html5-game/">previously mentioned</a>, my game engine was up and running and now work could finally begin on the design of the ballon game. Five weeks had already gone by of the original estimated 2-3 month project so this was a good time to do a roadmap check. The following were the key points that needed to be achieved in the next month:</p>
+
+<ul>
+<li>Tilesheets to cover roughly 12 levels</li>
+<li>Design the levels to sprawl over both X and Y axises</li>
+<li>Enemies with different behaviour to make the game challenging and varied over the levels</li>
+<li>Sound effects for enemies, weapons, the player, etc.</li>
+<li>Music for all the levels</li>
+<li>Some sort of storage to track progress, collectables, etc.</li>
+<li>A menu system for selecting levels, pausing, etc.</li>
+<li>Design tutorials for the start of the game</li>
+</ul>
+
+
+<p>The first thing that became apparent was that most of this would <em>not</em> be achievable in just a couple of months. The biggest hurdles would be designing the levels and creating the tilesheets for everything, I wasn&rsquo;t even so worried about the coding. This was never going to work, and as <a href="/2015/02/12/top-9-tips-for-indie-developers/">advised in the last post</a> I needed  to cut my scope drastically to meet my deadline, but what could be cut? As far as I could see this wasn&rsquo;t going to be possible unless I released just a couple of levels. That just wouldn&rsquo;t cut it for the app store. Thankfully there was a backup plan that [in my mind] was achievable in this small amount of time.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/balloon_game.gif' width='' height='' title='The balloon game as it currently looked'><span class='caption-text'>The balloon game as it currently looked</span></span></p>
+
+<p><strong>A new game idea</strong></p>
+
+<p>One routine I had gotten into the habit of doing was to leave a notepad by my bed at night. I&rsquo;ve always been a little bit of an insomniac and when I&rsquo;m lying in bed after putting in a 10 hour day of game coding my mind was always racing with ideas. Sometimes the thoughts that came to me were just tasks that I had forgotten to take into account, other times they were new gameplay mechanics, enemies, puzzles, etc.</p>
+
+<p>One night, lying in bed, the completely unrelated thought of using portals in a game popped into my head. Now it&rsquo;s not like this is a revolutionary idea by any means, but after some brief app store searching I came to the conclusion that this hadn&rsquo;t been implemented in the mobile space to great effect. I had this idea of a platformer/auto-runner where your character had to teleport around obstacles. I switched the light on, wrote it down in my notepad and went back to bed.</p>
+
+<p>With the burden of the scope on my current project, the next day I was keen to prototype my new idea and see if it was any fun to play. I chopped the balloons off my character and used my first crappy tile sheet (effectively some sort of hexagon manhole cover?) to create  an auto-scrolling level. I had to add the auto scrolling, change the game mechanic and controls to use portals instead, and then add gravity to the game so the player could fall onto the terrain. This was the finished prototype and the idea was surprisingly fresh and fun to play.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/early_cosmic_badger.gif' width='' height='' title='The game after the idea pivot and the first Cosmic Badger prototype'><span class='caption-text'>The game after the idea pivot and the first Cosmic Badger prototype</span></span></p>
+
+<p><strong>The road beyond</strong></p>
+
+<p>This new game concept was going to be a <em>lot</em>  easier to implement. It was an auto-runner so the level design could be constrained to the x-axis (like the early Mario games) and there was no need to add different enemy behaviours (at least for the minimum viable product). Design-wise, the balloon game was a much more interesting project to me, but realistically it would take too long. I decided that for my first project I needed to start small, and pivoted to the new portal project.</p>
+
+<p><strong>The message to all other indie devs</strong></p>
+
+<p>Im sure there&rsquo;s a graveyard of unfinished titles sitting on different developers&#8217; hard drives, simply because they were too ambitious, or maybe because that person got bored before they could finish it. Pick a project that&rsquo;s achievable given your timeframe and if it&rsquo;s possible, cut your scope down to a minimal game. You don&rsquo;t necessarily have to sacrifice the quality of the game but a basic game on an app store is better than no game at all.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Top 9 tips for indie game developers]]></title>
@@ -157,29 +204,6 @@
 <p>I sketched some rough characters in my notebook, took a photo of it and inked the rest of it using my laptop. Here&rsquo;s a gif of what it looked like, it&rsquo;s very rough around the edges but I thought the hand-drawn nature had a nice charm to it. This was my first tangible build running using my engine, and a bit of a milestone. Next, I&rsquo;ll talk about the technical implementation.</p>
 
 <p><span class='caption-wrapper'><img class='caption' src='/images/balloon_game.gif' width='' height='' title='The first semi-playable build of my engine'><span class='caption-text'>The first semi-playable build of my engine</span></span></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[An idea for an indie game]]></title>
-    <link href="http://blog.cosmicbadger.com/2015/01/19/no-job-equals-indie-dev/"/>
-    <updated>2015-01-19T22:44:39+11:00</updated>
-    <id>http://blog.cosmicbadger.com/2015/01/19/no-job-equals-indie-dev</id>
-    <content type="html"><![CDATA[<p>The idea for building a mobile game started while I was in Bali, Indonesia, where I was coming towards the end of a five month career break back-packing around S.E. Asia. At this stage I had pretty much exhausted all of my travel funds.  I had another week left there before flying to Melbourne for a couple of weeks and then finally home to Ireland. Aside from budgeting for food and shelter, there was no money left to do any anything tourist-related. In order to pass the time, this left myself with the free options of either swimming in the guesthouse pool or using the internet.</p>
-
-<p>With the time I had to burn I started thinking about what I was doing with my life when I returned to Ireland. I wanted to finally break into a career as a software engineer and decided that I would spend a couple of months working on a personal project in order to have something relevant on my resume. With a nerdy lifelong involvement with video games, I already knew the type of project it was going to be. I just didn&rsquo;t want to pick up a language that was entirely new to me such as Objective-C and then spend the two months getting to grips with it. I needed something more straight-forward, but something that I was familiar with. This language was Javascript and HTML5/Canvas was one of the new big things at the time.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/bali.jpg' width='' height='' title='The Balinese guesthouse where the first game code was written'><span class='caption-text'>The Balinese guesthouse where the first game code was written</span></span></p>
-
-<p>All I really needed then was a game idea, and it just so happened that I already had one in mind. As a kid, myself and my brother started making a 2D RPG using an application called <a href="http://wiki.mfgg.net/index.php?title=The_Games_Factory">The Games Factory</a> (that link shows how old it is now). The game that we made was called The Andrew W.K Saga (mainly because the main character looked like <a href="http://en.wikipedia.org/wiki/Andrew_W.K.">Andrew W. K.</a>) and it was actually the stupidest game ever! There was no real consistency to any of the levels or the controls, it was just a funny to make and it got dumber and dumber as it went along. There was one boss level where a giant cow-like creature was being pushed back and forth on a wooden kart by some gimpy looking old man. There were rocks falling from the ceiling which you had to avoid by moving the keys left and right. In order to kill the boss, there was a target randomly moving around the screen which you had to click whenever it crossed over the cow thing - all to the score of that crazy cuccoo catching mini-game music from the Zelda games (it wasn&rsquo;t exactly copyright-friendly). That <em>wasn&rsquo;t</em> the idea I had in mind by the way.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/p_sketch.jpg' width='' height='' title='Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask'><span class='caption-text'>Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask</span></span></p>
-
-<p>As ridiculous as the game was, there was one level in it that really stuck out as being enjoyable. Your character was stuck in a hot-air balloon and you had to navigate a slalom of enemies and spikes using the arrow keys to move left and right and then the space bar to hit the fuel line to go up, much like those one tap helicopter games that are everywhere except that you could move up and down in the game world too. While the idea was nothing special in terms of gameplay, I had ideas about the characters I wanted to put in it and the game world that I wanted to create which would hopefully make it stand out from other games of that kind. After about two collective hours googling html5 tutorials and hacking code I had created an extremely crude spike that verified that it would be possible to make the game.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/poc.png' width='' height='' title='The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!'><span class='caption-text'>The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!</span></span></p>
-
-<p>For anyone technical minded, and curious about how I did this - the game world was basically a huge background image for the whole level with the main character always remaining in the center (edited in MS paint using a touchpad for professionalism). The game background was translated on the canvas every time an arrow key-press was detected and there was some hardcoded logic in there to determine if your character&rsquo;s co-ordinates were within a single enemy&rsquo;s boundary. If you were then it was game over. Now, if anyone thinks that this screenshot is an indication of the final product then please just keep reading. It does get better, I promise!</p>
 ]]></content>
   </entry>
   
