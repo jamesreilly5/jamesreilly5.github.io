@@ -4,7 +4,7 @@
   <title><![CDATA[Category: concept art | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/concept-art/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-26T21:22:37+11:00</updated>
+  <updated>2015-03-21T00:22:49+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bringing sketches to life]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/03/20/bringing-game-dev-sketches-to-life/"/>
+    <updated>2015-03-20T22:57:13+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/03/20/bringing-game-dev-sketches-to-life</id>
+    <content type="html"><![CDATA[<p>There&rsquo;s nothing more satisfying as an indie dev than sketching down an idea and then implementing that idea in your game world. In this post I wanted to pay tribute to some of the earlier sketches and how they turned out, being implemented in the Cosmic Badger universe.</p>
+
+<p>The grass stage were the first levels that I worked on. I had very little experience as a &ldquo;pixel artist&rdquo; at this point and I actually went through a couple of iterations of the sprites before I got it to a state that I was happy with. I&rsquo;ll cover some of those in another blog.</p>
+
+<p>{% imgcap /images/grass_stage.jpg Concept art for the grass themed stage %}</p>
+
+<p>The industrial stage took a day or two to complete the background for. I hadn&rsquo;t really gotten a grasp on gradients at this stage and was changing the variation in shadow manually by changing the brightness/contrast. Everything was very much a learning process.</p>
+
+<p>{% imgcap /images/industrial_stage.jpg Concept art for the industrial themed stage %}</p>
+
+<p>Despite its simplicity, the toy stage came out as one of the best. The varying colours made it much more of an interesting level, landscape-wise. Some of the sketches were crudley drawn and then done properly from scratch on computer, others were scanned and then inked.</p>
+
+<p>{% imgcap /images/toy_stage.jpg Concept art for the toy stage. Some of these sprites are still a little rough as I never re-touched them later. I&rsquo;ll get to them. %}</p>
+
+<p>The black and white levels were some of the hardest to get just right. The foreground obstacles had to contrast enough from the background to be visible but that&rsquo;s kind of hard when you&rsquo;re working with the different tones of the same colour all the time.</p>
+
+<p>{% imgcap /images/black_and_white_stage.jpg This came out as one of my favourites %}</p>
+
+<p>How much has your own concept art reflected your final game? Could it still be improved or are you happy with the results?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Level design of an indie game]]></title>
@@ -22,7 +49,7 @@
 
 <p>With a <a href="/2015/02/15/knowing-when-to-cut-the-scope-of-your-indie-game/">clearer vision</a> of how the game would look, it was now time to start designing the levels. There was no real complex workflow to this. I bought a load of graph paper and sketched out the general layout of the terrain and obstacles, keeping the game mechanic in mind. I&rsquo;d then build the level using the <a href="/2015/02/08/building-a-level-editor-in-html5/">level editor</a> and test it on the laptop (with play-testing coming later on mobile). In hind-sight, it would have been nicer to set up an easier deploy process to prototype a section of level and test on the fly via mobile, but that&rsquo;s really a lesson learned for next time.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/design_doc.jpg' width='' height='' title='The layout of one of the later levels for Cosmic Badger'><span class='caption-text'>The layout of one of the later levels for Cosmic Badger</span></span></p>
+<p>{% imgcap /images/design_doc.jpg The layout of one of the later levels for Cosmic Badger %}</p>
 
 <p>I wanted 7 distinct stages with 3 levels per stage, so I came up with a list of themes that might be cool. Out of those themes I picked my favourite according to how varied I could make the obstacles and how interesting I could make the tilesheets. The list was stripped down to the following -</p>
 
@@ -37,7 +64,7 @@
 </ul>
 
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/badger_kingdom_sketch.jpg' width='' height='' title='The initial concept art of that same later level'><span class='caption-text'>The initial concept art of that same later level</span></span></p>
+<p>{% imgcap /images/badger_kingdom_sketch.jpg The initial concept art of that same later level %}</p>
 
 <p>I started sketching the ideas on a notebook, which then became a strong basis for how the sprites would evolve during game development. Photos were taken of the images and then inked/edited on the computer to become proper sprites. The images weren&rsquo;t perfect by any means, but they were legible enough to fit in an indie game, and something that I would later improve upon with practice (I&rsquo;ll show some examples of that evolution in a later post). This notebook became a bit of a bible during development. I know you&rsquo;re dying to see how this actually turned out, which is why it&rsquo;s being covered in the next post.</p>
 

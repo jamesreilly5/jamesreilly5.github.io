@@ -4,7 +4,7 @@
   <title><![CDATA[Category: game engine | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/game-engine/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-26T21:22:37+11:00</updated>
+  <updated>2015-03-21T00:22:49+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -24,7 +24,7 @@
 
 <p>As I didn&rsquo;t really plan for a level editor in my road map, I was reluctant to put much effor into it though; so here&rsquo;s what it looked like -</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/level_editor.jpg' width='' height='' title='The level editor used for the initial balloon game and the later Cosmic Badger'><span class='caption-text'>The level editor used for the initial balloon game and the later Cosmic Badger</span></span></p>
+<p>{% imgcap /images/level_editor.jpg The level editor used for the initial balloon game and the later Cosmic Badger %}</p>
 
 <p><strong> Adding tiles and entities </strong></p>
 
@@ -34,7 +34,7 @@
 
 <p>Then I would have to configure boundaries for each individual tile and entity. I had a debug button to display where the boundaries were (the red squares in the screenshot above) and I would have to manually change each boundary co-ordinates and dimensions until I was happy with them. Apart from making the actual levels, this was one of the most painstaking and monotonous tasks I had to do. I <em>wish</em> I had improved the editor to do this drag-and-drop style.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/boundaries_config.jpg' width='' height='' title='The task of adding boundaries to the game made me die inside a little'><span class='caption-text'>The task of adding boundaries to the game made me die inside a little</span></span></p>
+<p>{% imgcap /images/boundaries_config.jpg The task of adding boundaries to the game made me die inside a little %}</p>
 
 <p><strong> Displaying the grid </strong></p>
 
@@ -74,7 +74,7 @@
 
 <p>So here&rsquo;s a class diagram of the the main bones of the game. I&rsquo;ve excluded some modules as not to over-complicate the diagram but I&rsquo;ll explain the additions in a later post.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/cosmic_badger_technical_implementation_01.jpg' width='' height='' title='The early Javascript module dependencies of Cosmic Badger'><span class='caption-text'>The early Javascript module dependencies of Cosmic Badger</span></span></p>
+<p>{% imgcap /images/cosmic_badger_technical_implementation_01.jpg The early Javascript module dependencies of Cosmic Badger %}</p>
 
 <p>It&rsquo;s fairly self-explanitory, the Main module contained a MenuLoader responsible for drawing the menus (this wasn&rsquo;t always the case but I&rsquo;ll cover that in a later post). The MenuLoader was also was responsible for creating a Game. I&rsquo;m not sure that was the best design decision, it&rsquo;s implementation just had the least time impact a very late stage of development. Like I said, I&rsquo;ll cover that later. My Game module consisted of an [initially, 1d] array of entities which made up the enemies (which were just obstacles that weren&rsquo;t bound to 32px grid co-ordinates). The terrain data was just integers stored in a 2d array. The integers corresponded to an image&rsquo;s position in a large tilesheet and the array slot corresponded to the tiles position in the game world, which was tracked by the Camera. This data was stored in the Map module, which is essentially a glorified var containing the JSON game config.</p>
 

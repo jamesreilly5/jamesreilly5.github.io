@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ios | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/ios/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-02-26T21:22:37+11:00</updated>
+  <updated>2015-03-21T00:22:49+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -20,21 +20,21 @@
     <id>http://blog.cosmicbadger.com/2015/01/26/building-a-game-engine</id>
     <content type="html"><![CDATA[<p>A couple of weeks later I&rsquo;m in Melbourne. I&rsquo;m excited about the potential of my crappy proof of concept and I&rsquo;m eager to show it to my old housemate, a lecturer of game design at a Uni in Melbourne. His initial reaction to the overall idea was positive. Having a lot of experience in making games, he asked if I knew about using tile sheets to construct game worlds. As hard as it might be for an indie developer to comprehend, I <em>actually</em> didn&rsquo;t given my two hours of experience in the &ldquo;games industry&rdquo;. This was a good starting point. He showed me a game called <a href="http://browserquest.mozilla.org/">Browser Quest</a>, which was also html5 game developed by Mozilla to demonstrate the use of WebSockets. The best thing about this game is that the code was available on <a href="https://github.com/mozilla/BrowserQuest">GitHub</a> and it was exactly what I needed to get going.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/browser_quest.png' width='' height='' title='Browser Quest, an open source zelda-style RPG developed by Mozilla. A good reference for building a game engine'><span class='caption-text'>Browser Quest, an open source zelda-style RPG developed by Mozilla. A good reference for building a game engine</span></span></p>
+<p>{% imgcap /images/browser_quest.png Browser Quest, an open source zelda-style RPG developed by Mozilla. A good reference for building a game engine %}</p>
 
 <p>Once I returned to Ireland I cloned the repo, removed all the server side code (as this was going to work locally on a phone) and stripped all the modules down to their bare bones. I wanted to write the thing from scratch but the existing software design seemed sensible to me so I left the file names there for reference. Other experienced indie developers may probably call me crazy for rolling my own game engine when there are so many good frameworks already out there, but this was a good learning experience for me and the mistakes I made had taught me a lot.</p>
 
 <p>I wanted to take a pretty Agile approach to developing the game. I wasn&rsquo;t using card walls at the beginning, but it wasn&rsquo;t as necessary seeing as I was the only one that needed visibility. I basically had a notebook/bible (I&rsquo;ll talk about this more in a future blog) where I was tracking a list of tasks in order of importance, each of which was scored in terms of difficulty in order to track my expected to progress down the line.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/task_board.jpg' width='' height='' title='My &ldquo;card wall&rdquo; prior to moving to Trello'><span class='caption-text'>My &ldquo;card wall&rdquo; prior to moving to Trello</span></span></p>
+<p>{% imgcap /images/task_board.jpg My &ldquo;card wall&rdquo; prior to moving to Trello %}</p>
 
 <p>I&rsquo;ll briefly discuss the technical implementation in next post, but after about 2-3 weeks of researching/coding I had a very basic game engine which could display entities in the game world via configurable json, a player that moved around using swipe gestures (and some drift physics) and collision detection between the player and the other entities. Now I just needed some shiny things to populate my game world. Now to a sprite artist the following might be a bit of a weird workflow, and it&rsquo;s justification to how much I was winging it as I went along&hellip;</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/balloon_sketches.png' width='' height='' title='Some rough sketches of placeholder characters to bring the game world to life'><span class='caption-text'>Some rough sketches of placeholder characters to bring the game world to life</span></span></p>
+<p>{% imgcap /images/balloon_sketches.png Some rough sketches of placeholder characters to bring the game world to life %}</p>
 
 <p>I sketched some rough characters in my notebook, took a photo of it and inked the rest of it using my laptop. Here&rsquo;s a gif of what it looked like, it&rsquo;s very rough around the edges but I thought the hand-drawn nature had a nice charm to it. This was my first tangible build running using my engine, and a bit of a milestone. Next, I&rsquo;ll talk about the technical implementation.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/balloon_game.gif' width='' height='' title='The first semi-playable build of my engine'><span class='caption-text'>The first semi-playable build of my engine</span></span></p>
+<p>{% imgcap /images/balloon_game.gif The first semi-playable build of my engine %}</p>
 ]]></content>
   </entry>
   
@@ -47,15 +47,15 @@
 
 <p>With the time I had to burn I started thinking about what I was doing with my life when I returned to Ireland. I wanted to finally break into a career as a software engineer and decided that I would spend a couple of months working on a personal project in order to have something relevant on my resume. With a nerdy lifelong involvement with video games, I already knew the type of project it was going to be. I just didn&rsquo;t want to pick up a language that was entirely new to me such as Objective-C and then spend the two months getting to grips with it. I needed something more straight-forward, but something that I was familiar with. This language was Javascript and HTML5/Canvas was one of the new big things at the time.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/bali.jpg' width='' height='' title='The Balinese guesthouse where the first game code was written'><span class='caption-text'>The Balinese guesthouse where the first game code was written</span></span></p>
+<p>{% imgcap /images/bali.jpg The Balinese guesthouse where the first game code was written %}</p>
 
 <p>All I really needed then was a game idea, and it just so happened that I already had one in mind. As a kid, myself and my brother started making a 2D RPG using an application called <a href="http://wiki.mfgg.net/index.php?title=The_Games_Factory">The Games Factory</a> (that link shows how old it is now). The game that we made was called The Andrew W.K Saga (mainly because the main character looked like <a href="http://en.wikipedia.org/wiki/Andrew_W.K.">Andrew W. K.</a>) and it was actually the stupidest game ever! There was no real consistency to any of the levels or the controls, it was just a funny to make and it got dumber and dumber as it went along. There was one boss level where a giant cow-like creature was being pushed back and forth on a wooden kart by some gimpy looking old man. There were rocks falling from the ceiling which you had to avoid by moving the keys left and right. In order to kill the boss, there was a target randomly moving around the screen which you had to click whenever it crossed over the cow thing - all to the score of that crazy cuccoo catching mini-game music from the Zelda games (it wasn&rsquo;t exactly copyright-friendly). That <em>wasn&rsquo;t</em> the idea I had in mind by the way.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/p_sketch.jpg' width='' height='' title='Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask'><span class='caption-text'>Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask</span></span></p>
+<p>{% imgcap /images/p_sketch.jpg Sketch of said cow - I don&rsquo;t know how I came up with this and at this point I&rsquo;m too afraid to ask %}</p>
 
 <p>As ridiculous as the game was, there was one level in it that really stuck out as being enjoyable. Your character was stuck in a hot-air balloon and you had to navigate a slalom of enemies and spikes using the arrow keys to move left and right and then the space bar to hit the fuel line to go up, much like those one tap helicopter games that are everywhere except that you could move up and down in the game world too. While the idea was nothing special in terms of gameplay, I had ideas about the characters I wanted to put in it and the game world that I wanted to create which would hopefully make it stand out from other games of that kind. After about two collective hours googling html5 tutorials and hacking code I had created an extremely crude spike that verified that it would be possible to make the game.</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='/images/poc.png' width='' height='' title='The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!'><span class='caption-text'>The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW!</span></span></p>
+<p>{% imgcap /images/poc.png The proof of concept for the initial idea. A friend told me that it looked like a sock puppet. MS Paint FTW! %}</p>
 
 <p>For anyone technical minded, and curious about how I did this - the game world was basically a huge background image for the whole level with the main character always remaining in the center (edited in MS paint using a touchpad for professionalism). The game background was translated on the canvas every time an arrow key-press was detected and there was some hardcoded logic in there to determine if your character&rsquo;s co-ordinates were within a single enemy&rsquo;s boundary. If you were then it was game over. Now, if anyone thinks that this screenshot is an indication of the final product then please just keep reading. It does get better, I promise!</p>
 ]]></content>
