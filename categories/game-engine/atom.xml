@@ -4,7 +4,7 @@
   <title><![CDATA[Category: game engine | The story of Cosmic Badger]]></title>
   <link href="http://blog.cosmicbadger.com/categories/game-engine/atom.xml" rel="self"/>
   <link href="http://blog.cosmicbadger.com/"/>
-  <updated>2015-04-03T18:13:30+11:00</updated>
+  <updated>2015-04-03T18:43:22+11:00</updated>
   <id>http://blog.cosmicbadger.com/</id>
   <author>
     <name><![CDATA[James Reilly]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Indie Games Festival - post-mortem]]></title>
+    <link href="http://blog.cosmicbadger.com/2015/04/03/indie-games-festival/"/>
+    <updated>2015-04-03T16:00:47+11:00</updated>
+    <id>http://blog.cosmicbadger.com/2015/04/03/indie-games-festival</id>
+    <content type="html"><![CDATA[<p>Last Saturday I had the opportunity to showcase my game to the public for the first time. A few days before I was looking through gamedev posts on reddit and stumbled across a post about open spots for iFest, a free-to-the-public independent game festival in Melbourne. Now I&rsquo;ve never heard anything about the event before, there was next to no press for it and a worrying lack of followers on the official Twitter page so I assumed that it was going to be pretty small-time. It was no PAX for sure; but showcasing here offered a couple of opportunities:</p>
+
+<p><strong> 1. Publicity </strong></p>
+
+<p>Raise a little more awareness about the game and gain a few more followers on Twitter / Facebook</p>
+
+<p><strong> 2. Feedback </strong></p>
+
+<p>Up until this point, the only people that had played or tested the game were friends or colleagues. I&rsquo;m not saying that they aren&rsquo;t capable of giving constructive feedback but first impressions from random punters are going to be a lot more honest, and more accurately reflect the initial reaction once the game goes live on the app stores.</p>
+
+<p><strong> Preparation </strong></p>
+
+<p>The timing was actually pretty bad. I had no paraphernalia or expensive, flashy banners and with a couple of days to prepare <em>and</em> a house move happening on the same weekend the stand wasn&rsquo;t going to be the most professional of displays. It was literally a few hours to mock up some pretty crude posters from existing in-game assets with some social media links on them and rushing to OfficeWorks to get it all printed. The result came out at AU$60 for posters to hang off my stand, 150 business cards (cut up by hand from A4 card prints the night before) and a t-shirt, because that&rsquo;s how professionals roll.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/paraphernalia.jpg' width='' height='' title='What 3 hours accomplishes in paraphernalia'><span class='caption-text'>What 3 hours accomplishes in paraphernalia</span></span></p>
+
+<p><strong> The event </strong></p>
+
+<p>I arrived at iFest around 10am, just in time for it to open to the public and expectations were pretty much accurate. There were about 20 stands there, some of which were flashier than others depending on the studio. I happened to be placed next to a small indie team of five, some of which were ex-EA developers. They were working on a Kickstarter called <a href="https://www.youtube.com/watch?v=POzlC6aTfPs">Space Dust Racers</a>. Their setup was pretty decent compared to what I was about to pullout of the bag. They had a big widescreen TV with multiple X-Box controllers but most importantly, they had a <em>really</em> polished, playable game. It looked closer to a AAA studio game than indie, which made me quite nervous about setting up my stand and how small-time it might look in comparison to others.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/iFest.jpg' width='' height='' title='iFest at Federation Square in Melbourne'><span class='caption-text'>iFest at Federation Square in Melbourne</span></span></p>
+
+<p>I had a shitty old 13&#8221; monitor (which I never even ended up using, partly because of embarrassment) and my MacBook Air for showing my first-cut launch trailer. I fired that up, plopped a test device down on the table with a couple of stacks of business cards. The first half of the day was a slow trickle of people walking through the event, some of which had no idea what the festival actually was. It got busier after lunch time but overall I had only about 30-40 people visit my stand over the course of the 4.5 hours there, which pretty much representative of the event itself.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/iFest-stand.jpg' width='' height='' title='The lemonade stand - we all have to start somewhere'><span class='caption-text'>The lemonade stand - we all have to start somewhere</span></span></p>
+
+<p><strong> Public reaction </strong></p>
+
+<p>So my Twitter following wasn&rsquo;t really going to take off. As uneventful as the day was, none of that really mattered because once people started approaching my stand (no matter how small in number) and started playing my game it really changed my perspective of my own game. I got a range of different demographics from parents and children to software undergrads but pretty much everyone seemed to really enjoy playing <a href="https://www.youtube.com/watch?v=L6zrbYjWO0c">Cosmic Badger</a>. I saw people smile while playing the game, or laughing when the game mechanic finally clicked - that &ldquo;Ah!&rdquo; moment that I wanted people to figure out on their own. Some kept playing for 5-10 minutes at a time, one guy even came back for a second go half an hour later.</p>
+
+<p>Some slightly paraphrased quotes from memory:</p>
+
+<p><strong> Positive feedback </strong></p>
+
+<ul>
+<li>&ldquo;that was actually fun&rdquo;</li>
+<li>&ldquo;that&rsquo;s a really cool mechanic, I don&rsquo;t think that&rsquo;s ever been done before&rdquo;</li>
+<li>&ldquo;I can see myself getting addicted after a while&rdquo;</li>
+<li>&ldquo;I love the pastel colour art-style&rdquo;</li>
+</ul>
+
+
+<p><strong> Constructive feedback </strong></p>
+
+<ul>
+<li>&ldquo;Some of the obstacles look like they&rsquo;re in the background&rdquo;</li>
+<li>&ldquo;Needs some cooler space / time rift effect between the portals&rdquo;</li>
+</ul>
+
+
+<p><strong> Questions </strong></p>
+
+<ul>
+<li>&ldquo;So it&rsquo;s portal meets flappy bird?&rdquo;</li>
+<li>&ldquo;Why a badger?&rdquo;</li>
+</ul>
+
+
+<p>The things I felt when I first started playing my initial prototype (before the two years worth of work where I had become completely impartial), the things that I wanted others to experience when they picked up the game and started playing were happening, and this was one of the most satisfying and reassuring moments since starting this project.</p>
+
+<p>Most of us indie devs spend months to years working on our own pet projects. During which we constantly doubt ourselves and our abilities, and become almost apathetic to what we&rsquo;re working on. Some of us have seen and played so much of our own game that it&rsquo;s hard to tell if it&rsquo;s actually good any more. Getting strangers&#8217; feedback was one of the most important realisations in this project.</p>
+
+<p>I&rsquo;m hoping to submit my game for app store review this weekend. When it finally releases I have no idea how many people will download it, or even realise it&rsquo;s out there, but at least last weekend I realised that I&rsquo;ve accomplished something. I&rsquo;ve finished a game, someone played it and someone liked it.</p>
+
+<p><strong> Special Mentions </strong></p>
+
+<p>I want to give  a special mention to the two stands each side of me, one which was hobby dev <a href="http://hemingwaygames.com/">Hemmingway Games</a> like me, taking every opportunity outside of his day job to work on his passion. The other is the kickstarter team of 5 working on <a href="http://www.spaceduststudios.com/">Space Dust Racers</a>, who have really earned my respect. They quit their full-time jobs while supporting families to work on their own vision. Asking for a modest amount on Kickstarter, these guys seem more focussed on achieving their goal and earning enough to survive than being greedy. I&rsquo;ve played their game and it was actually really fun, so check them out when they launch.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The level editor - make ALL THE THINGS!]]></title>
