@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Twelve hour entrepreneur`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `James Reilly`,
+      summary: `, a maker building in public to $10k MRR`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://www.twelvehourentrepreneur.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `cosmic_badger`,
     },
   },
   plugins: [
