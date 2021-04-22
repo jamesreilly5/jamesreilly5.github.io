@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Twelve hour entrepreneur`,
     author: {
-      name: `James Reilly`,
+      name: `James`,
       summary: `, a maker building in public to $10k MRR`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
