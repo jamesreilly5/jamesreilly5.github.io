@@ -16,10 +16,14 @@ This blog is about the **process** of building a SaaS rather than details specif
 ## Why build in public
 Reading Twitter recently it seems like I'm late to the party with the build-in-public movement, but I was inspired to do this from reading [The Almanack of Naval Ravikant](https://www.navalmanack.com/).
 
+> The more desire I have for something to work out a certain way, the less likely I am to see the truth. Especially in business, if something isn’t going well, I try to acknowledge it publicly and I try to acknowledge it publicly in front of my co-founders and friends and co-workers. Then, I’m not hiding it from anybody
+else. If I’m not hiding it from anybody, I’m not going to delude myself from what’s actually going on - _Naval_
+
+
 Here's a few of the reasons I'm documenting my ideas
 
 #### 1. Clearer thinking
-Not only does becoming a better writer help become a better thinker, but documenting my thoughts keeps me honest about my progress. With previous projects when I internalised my thoughts it was easy to sidestep problems with other more manageable thoughts when there was any resistance. Writing for an audience forces me to address questions I know others will ask.
+Not only does becoming a better writer help become a better thinker, but documenting my thoughts keeps me honest about my progress. With previous projects when I internalised my thoughts it was easy to sidestep problems with other more manageable ideas when there was any resistance. Writing for an audience forces me to address questions I know others will ask.
 
 #### 2. Shared experiences
 I'm sure there's a lot of people in the same boat right now. I hope some of the things I write about are useful to others but equally I hope there are people a few steps ahead of me pointing out ideas that won't work.
