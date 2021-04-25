@@ -20,7 +20,7 @@ Reading Twitter recently it seems like I'm late to the party with the build-in-p
 else. If I’m not hiding it from anybody, I’m not going to delude myself from what’s actually going on - _Naval_
 
 
-Here's a few of the reasons I'm documenting my ideas
+Here's a few of the reasons I'm documenting my ideas:
 
 #### 1. Clearer thinking
 Not only does becoming a better writer help become a better thinker, but documenting my thoughts keeps me honest about my progress. With previous projects when I internalised my thoughts it was easy to sidestep problems with other more manageable ideas when there was any resistance. Writing for an audience forces me to address questions I know others will ask.
