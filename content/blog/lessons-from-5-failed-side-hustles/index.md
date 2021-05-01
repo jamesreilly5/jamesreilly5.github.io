@@ -15,7 +15,7 @@ An auto-runner platformer game for iOS and Android. I started building it as a s
 ##### Some vanity metrics
 * 160 units sold
 * ~$160 revenue
-* ~2 years development time of evening and weekends. Th mmajority of work was photoshopping tilesheets, level design, coding was the easy part
+* ~2 years development time of evening and weekends. Th majority of work was photoshopping tilesheets, level design, coding was the easy part
 
 ##### Some _real_ metrics
 * Hourly wage: ~$0.08c
@@ -31,7 +31,7 @@ An auto-runner platformer game for iOS and Android. I started building it as a s
 ##### What was it?
 [Link to App](https://play.google.com/store/apps/details?id=com.badgerdigital.the.scenario.game&hl=en_AU&gl=US)
 
-A Scenario-based "Would you rather" game for iOS and Android. This project started as a way to test the market for a much more ambitous project that never materialised. It's gone from the app store now because it wasn't making enough money to justify paying my Apple developer license, or justifying the hoops I had to jump through maintining Facebook SDK updates or supporting a mandatory Apple login implementation.
+A Scenario-based "Would you rather" game for iOS and Android. This project started as a way to test the market for a much more ambitious project that never materialised. It's gone from the app store now because it wasn't making enough money to justify paying my Apple developer license, or justifying the hoops I had to jump through maintaining Facebook SDK updates or supporting a mandatory Apple login implementation.
 
 By some sheer luck event, this app caught the attention of a major casual mobile app publisher. They ran some tests on it for retention and marketability. It failed those tests so nothing more was done with this app. I did propose a new app for them to test though, which is failure #3.
 
@@ -56,7 +56,7 @@ By some sheer luck event, this app caught the attention of a major casual mobile
 ##### What was it?
 [Link to Product Hunt Page](https://www.producthunt.com/posts/yes-or-no-2) - no longer on the app store
 
-I simple Yes or No questions game for iOS with a Tinder style swipe-to-answer system. As mentioned above, the same publisher that contacted me for The Scenario Game agreed to run the same aquisition tests for Yes or No. Marketability was much better but it still failed on retention. 
+I simple Yes or No questions game for iOS with a Tinder style swipe-to-answer system. As mentioned above, the same publisher that contacted me for The Scenario Game agreed to run the same acquisition tests for Yes or No. Marketability was much better but it still failed on retention. 
 
 ##### Some vanity metrics
 * 11.5k installs on iOS
@@ -68,14 +68,14 @@ I simple Yes or No questions game for iOS with a Tinder style swipe-to-answer sy
 * Roughly 3 months of work to build, evenings and weekends
 
 ##### What I thought to be true when I started
-> If I can build an app that is marketable, has high retention and a low cost of aquisition I can partner with a publisher to aquire users at scale and make a decent income.
+> If I can build an app that is marketable, has high retention and a low cost of acquisition I can partner with a publisher to acquire users at scale and make a decent income.
 
 ##### What I thought to be true after it failed
 > B2C is for dreamers and businesses with loads of capital. It's much easier to make money building B2B software.
 
 ### Failure #4: Prioritsely
 ##### What was it?
-A tool that allowed remote teams to **prioritise** Kanban wall tasks asyncronously. I built a prototype and reached out to remote product managers over Twitter and LinkedIn to organise some interviews and prototype testing.
+A tool that allowed remote teams to **prioritise** Kanban wall tasks asynchronously. I built a prototype and reached out to remote product managers over Twitter and LinkedIn to organise some interviews and prototype testing.
 
 I didn't spend longer than a month or two working on this project and it made no money. I consider it one of my most successful side projects because I quickly realised it wasn't worth building and avoided months of wasted time. I was pragmatic enough to interview about 10 different people in my target market to gain insights into if the tool would be useful. What I concluded in the end was I had a feature, not a product. To build a product I'd need to build a project management SaaS, which was suicide so I killed it.
 
