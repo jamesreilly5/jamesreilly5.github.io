@@ -4,7 +4,7 @@ date: "2021-04-25T20:23:00.169Z"
 description: Stories from 5 failed side hustles, metrics, and how my assumptions changed as each one failed.
 ---
 
-I've built 5 failed side hustles over 10 years and my biggest regret isn't that I failed, it's that I didn't fail faster. I'm starting over with [usertake.com](https://usertake.com) but before I going back over _why_ the others failed.
+I've built 5 failed side hustles over 10 years and my biggest regret isn't that I failed, it's that I didn't fail faster. I'm starting over with [usertake.com](https://usertake.com) but before I do I'm looking back over _why_ the others failed.
 
 ### Failure #1: Cosmic Badger
 ##### What was it?
