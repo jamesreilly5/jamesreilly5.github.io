@@ -44,8 +44,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong>{author?.summary || null}.
-          {` `}
+          Written by <strong>{author.name}</strong>, a maker building <a href="https://www.usertake.com">usertake.com</a> in public to $10k MRR.
           If you share the same mindset I'd love to {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
             connect on Twitter

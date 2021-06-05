@@ -1,7 +1,7 @@
 ---
 title: Validating a new SaaS idea
 date: "2021-05-01T13:06:00.169Z"
-description: 
+description: The worst mistake I made was focussing on the idea and not the problem. The best exercise I did was building the landing page first (i.e. the packaging), writing my value propositions and working backwards to the product.
 ---
 
 ### Don't start with the idea, start with the problem
