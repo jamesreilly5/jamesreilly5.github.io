@@ -1,7 +1,7 @@
 ---
 title: Path to $100 MRR
 date: "2021-12-18T14:48:00.169Z"
-description: Stories from 5 failed side hustles, metrics, and how my assumptions changed as each one failed.
+description: In my previous post I talked about _some_ indicators of interest from running Google ads to fake landing page. Unfortunately it wasn't enough to validate my idea. I had beta sign ups, but I had no indication of engagement for my fake product because not one of my sign ups replied to me when I reached out
 ---
 
 I haven't written anything in a while because I've spent the last few months building. In my previous post I talked about _some_ indicators of interest from running Google ads to fake landing page. Unfortunately it wasn't enough to validate my idea. I had beta sign ups, but I had no indication of engagement for my fake product because not one of my sign ups replied to me when I reached out.
